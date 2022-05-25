@@ -1,0 +1,5 @@
+print("Ingrese el titulo del libro: ")
+titulo = input()
+print("Ingrese el nombre del autor del libro: ")
+autor = input()
+print(titulo, "Fue escrito por", autor)
