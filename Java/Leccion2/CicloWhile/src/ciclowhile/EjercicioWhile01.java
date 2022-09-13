@@ -11,3 +11,5 @@ public class EjercicioWhile01 {
     }
     }
 }
+
+//Captura de DANIEL GUERRERO , grupo : Bestias binarias
