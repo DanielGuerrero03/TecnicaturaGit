@@ -73,3 +73,33 @@ def listarNombres(*nombres): # Normalmente se utiliza : *args
 listarNombres("Daniel", "Ariel", "Pepe","Raul","Mirta")
 listarNombres("Nahuel", "Gabriel", "Rosa", "Carlos")
 
+
+def listarTerminos(**terminos): # Lo mas utilizado es **kwargs para recibir los argumentos
+    for llave, valor in terminos.items(): # kwargs significa : key word argument
+        print(f"{llave} : {valor}")
+
+listarTerminos() # No recibe nada, nada se va a mostrar
+listarTerminos(IDE="Integrated Develoment Enviroment", PK="Primary key")
+listarTerminos(Nombre="Lionel Messi", Posicion= 10)
+
+# Vamos a utilizar una lista para recibir elementos
+
+def desplegarNombres(nombres):
+    for nombre in nombres:
+        print(nombre)
+nombres2 = ["Tito", "Pedro", "Carlos"]
+desplegarNombres(nombres2)
+desplegarNombres("Carla")
+# desplegarNombres(10, 11) # No es un objeto iterable
+desplegarNombres((10, 11)) # La convertimos a una tupla
+desplegarNombres([22,55]) # La convertimos en una lista
+
+# Funciones Recursivas
+# vamos a necesitar un caso base y un caso recursivo
+def factorial(numero):
+    if numero == 1: # caso base
+        return 1
+    else:
+        return numero * factorial(numero-1) # Caso recursivo
+numero = int(input("Digite un Número para sacar el Factorial ! : "))
+print(f"El factorial del numero es: {factorial(numero)}")
