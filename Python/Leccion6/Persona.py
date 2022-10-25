@@ -31,7 +31,8 @@ print(f"El objeto1 modificado de la clase persona: {persona1.nombre} {persona1.a
 persona1.mostrar_detalle() # La referencia en este caso se pasa de manera automatica
 persona2.mostrar_detalle()
 
-persona1.telefono = "465465465465"
+# Persona.mostrar_detalle(persona1) # Debemos pasarla una referencia para el self o dara error
+persona1.telefono = "465465465465" # creamos un atributo superficial, solo es para persona1
 print(f"Este es el telefono de: {persona1.nombre} {persona1.telefono}") # Hemos creado un atribito de un objeto
 
 # print(persona2.telefono) el objeto persona2 no tiene este atributo, da error
@@ -40,3 +41,5 @@ persona3 = Persona("Rogelio", "Romero",654564654, 22, "Telefono", "34654654", "C
 persona3.mostrar_detalle()
 # print(persona3._dni) # ESto no se debe utilizar (esta encapsulado), esto dice que lo desconocemos Python
 # persona3.__nombre Esta totalmente encasulado, no nos muestra nada
+
+# instancia = objeto

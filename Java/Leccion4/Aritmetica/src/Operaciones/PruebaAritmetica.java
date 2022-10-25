@@ -37,12 +37,13 @@ public class PruebaAritmetica {
         System.out.println("Aqui hay otro metodo");
     }
 }
-//Creamos una nueva vlase
+//Creamos una nueva clase
 class Persona{
     String nombre;
     String apellido;
     
     Persona(String nombre,String apellido){ //Constructor
+        
         super(); //Llamada al constructor de la clase Padre Objetc
         //Imprimir imprimir = new Imprimir();
         new Imprimir().imprimir(this);
@@ -63,3 +64,5 @@ class Imprimir{
         System.out.println("Impresion del objeto actual (this): "+this);
     }
 }
+
+
